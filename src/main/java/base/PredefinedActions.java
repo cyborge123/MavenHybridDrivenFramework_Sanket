@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,8 +33,33 @@ public class PredefinedActions {
 	}
 
 	public static void start(String url) {
-		System.setProperty(ConstantValue.CHROMEDRIVERKEY, ConstantValue.CHROMEDRIVER);
-		driver = new ChromeDriver();
+
+		String browser = System.getProperty("browser");
+		String environment = System.getProperty("environment");
+		
+		System.out.println("Browser Name : " + browser);
+		System.out.println("Environmanet Name : " + environment);
+
+		switch (browser.toLowerCase()) {
+		case "chrome":
+			System.setProperty(ConstantValue.CHROMEDRIVERKEY, ConstantValue.CHROMEDRIVER);
+			driver = new ChromeDriver();
+			break;
+
+		case "firefox":
+			System.setProperty(ConstantValue.CHROMEDRIVERKEY, ConstantValue.CHROMEDRIVER);
+			driver = new FirefoxDriver();
+			break;
+
+		case "ie":
+			System.setProperty(ConstantValue.CHROMEDRIVERKEY, ConstantValue.CHROMEDRIVER);
+			driver = new FirefoxDriver();
+			break;
+
+		default:
+			break;
+		}
+
 		driver.manage().window().maximize();
 		driver.get(url);
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
