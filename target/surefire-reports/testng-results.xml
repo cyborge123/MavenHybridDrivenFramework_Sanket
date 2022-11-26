@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="32835" started-at="2022-11-24T09:06:40 IST" finished-at="2022-11-24T09:07:13 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="32835" started-at="2022-11-24T09:06:40 IST" finished-at="2022-11-24T09:07:13 IST">
+      <class name="testscripts.MyInfoSalaryTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testscripts.MyInfoSalaryTest@56ac3a89]" name="setUp" is-config="true" duration-ms="17315" started-at="2022-11-24T09:06:40 IST" finished-at="2022-11-24T09:06:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCtc()[pri:0, instance:testscripts.MyInfoSalaryTest@56ac3a89]" name="verifyCtc" duration-ms="15100" started-at="2022-11-24T09:06:58 IST" finished-at="2022-11-24T09:07:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCtc -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testscripts.MyInfoSalaryTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="390" started-at="2022-11-24T09:07:13 IST" finished-at="2022-11-24T09:07:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCtc status=SUCCESS method=MyInfoSalaryTest.verifyCtc()[pri:0, instance:testscripts.MyInfoSalaryTest@56ac3a89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testscripts.MyInfoSalaryTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
